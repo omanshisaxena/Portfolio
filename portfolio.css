@@ -1,0 +1,148 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora';
+}
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.navbar img{
+    height: 200px;
+    width: 200px;
+    margin: -49px -26px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin: 10px 30px;
+    background: none;
+}
+
+.navbar ul li{
+    padding: 23px 40px;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+    transition: all 0.5s ease-in 0s;
+    
+}
+
+.navbar ul li:hover{
+    transform: scale(1.2);
+    color: yellow;
+    text-shadow: 2px 2px 4px wheat;
+
+}
+
+.details{
+    margin: 5% 8% 4% 10%;
+    background: none;
+    z-index: 2;
+    opacity: 100%;
+    position: absolute;
+}
+
+.details h1{
+    font-size: 50px;
+    margin-bottom: 16px;
+    background: none;
+}
+
+span{
+    color: yellow;
+    font-family: "Playwrite NL", cursive;
+    font-size: 35px;
+    background: none;
+}
+.details p{
+    color: rgb(2, 209, 255);
+    line-height: 25px;
+    background: none;
+}
+.details .welcome{
+    background: none;
+    color: burlywood;
+    margin: -13px -50px;
+    font-size: 20px;
+}
+.details a{
+    background: none;
+    background: white;
+    color: brown;
+    font-weight: bolder;
+    padding: 16px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 25px 3px;
+    transition: box-shadow 0.2s ease-in 0s;
+}
+
+.details a:hover{
+    box-shadow: 4px 3px 13px grey;
+}
+
+.details .logo{
+    opacity: 0.3;
+    position: fixed;
+    z-index: .5;
+    background: none;
+}
+
+.picture{
+    position: relative;
+}
+
+.images{
+    display: flex;
+    position: relative;
+    height: 126rem;
+    width: 74rem;
+}
+
+.images .pics{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.images .shape{
+    /* position: absolute; */
+    height: 11%;
+    width: 36%;
+    margin-left: 70%;
+    z-index: 1;
+    margin-top: -26%;
+    right: 100px;
+    transition: all 0.5s;
+    opacity: .5;
+    background: none;
+}
+
+.images:hover .shape{
+    transform: skew(10deg,10deg);
+}
+
+.images .mypic{
+    border: 4px solid yellow;   
+    background: none;
+    border-radius:100%;
+    height: 15%;
+    width: 23%;
+    margin-left: 66%;
+    z-index: 2;
+    display: flex;
+    margin-top: -30%;
+    transition: all 0.5s ease 0s;
+}
+
+.images .mypic:hover{
+    transform: translateY(10px);
+}
